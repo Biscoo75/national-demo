@@ -1,0 +1,1090 @@
+Cus<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>National Egypt Tours</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="National Egypt Tours" name="keywords">
+    <meta content="National Egypt Tours" name="description">
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favIcon.png">
+
+    <!-- Favicon -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./../assets/lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="./../assets/css/icons.css">
+    <link href="./../assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/slider.css" rel="stylesheet">
+    <link href="assets/css/visit-style.css" rel="stylesheet">
+
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navvv {
+            background-color: #111f46 !important;
+            position: absolute !important;
+            top: 0 !important;
+        }
+
+
+
+        @media(max-width:992px) {
+            .navbar {
+                background-color: #fff;
+            }
+        }
+
+        .nav-item {
+            font-size: 17px !important;
+        }
+
+        .btn-form {
+            background-color: #2496d4;
+            color: white;
+        }
+
+        .h4-text-dark {
+            color: white !important;
+        }
+
+
+        @media(min-width:767px) {
+            body {
+                padding-top: 40px;
+            }
+        }
+
+        .col-7 {
+            width: 55% !important;
+        }
+
+        .sticky-top.navbar-dark {
+            background-color: #fff !important;
+        }
+
+        .stickyUl {
+            position: relative;
+            /* top: 50px; */
+            transition: top 0.3s;
+            z-index: 1000;
+        }
+
+        .stickyUl.sticky {
+            position: fixed;
+            top: 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-dark {
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!--!--------------- Navbar Start -->
+    <div class="container-fluid position-relative p-0 navvv">
+        <Nav
+            class="navbar navvv navbar-expand-lg navbar-dark px-5 mt-0 container-fluid  py-lg-1 d-flex align-items-center justify-content-around ">
+            <div class="container-xxl">
+                <div class="d-flex flex-row align-items-center">
+                    <a href="index.html"><img src="./../assets/img/favIcon.png" alt="" style="margin-left: 10px;"
+                            class="logo1" style="width: 120px;">
+                    </a>
+                    <h5 class="my-0 text-white text-end">National Egypt Tours</h5>
+                </div>
+                <button class="navbar-toggler" onclick="openNav(); hideSideBarButton();" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+                <div class="w-100 collapse navbar-collapse " id="navbarCollapse">
+                    <ul
+                        class="list-unstyled row w-100 align-items-center align-content-center justify-content-between smallNav">
+                        <li class="col-lg-5 px-0  mx-auto " id="searchGroup">
+                            <div
+                                class="row  col-12 h-75 align-content-center align-items-center mainSearch mx-0 py-0 justify-content-between ">
+                                <input type="text" name="where" class="col-4 where me-4" placeholder="your destination">
+                                <i class="bi bi-geo-alt position-absolute locationSearchIcon mt-1"></i>
+                                <input type="date" name="date" class="col-4 whenButton text-dark" id="dateInput"
+                                    placeholder="Select a date" oninput="handleDateInput()">
+                                <a class="col-1 mx-2 text-dark text-light searchButton my-0 custom-popUpOpen">
+                                    <i class="bi bi-search mt-1 text-light"></i></a>
+
+                            </div>
+
+                        </li>
+                        <li class="col-lg-3 align-content-start my-sm-2 ps-lg-0">
+                            <ul id="top_tools2"
+                                class="d-flex my-sm-2 position-static align-items-center justify-content-lg-end gap-1 ">
+                                <!-- <a href="search.html" target="_blank" title="Search in" class="searchSelect text-light pt-1"
+                                id="" name="tours_category"
+                                style="background-color: #500;border: 0px;font-weight: bold; text-align: center;font-size: 20px; position: static !important;">
+                            </a> -->
+
+                                <!-- **=================================SideBar start */ -->
+                                <li>
+                                    <div id="sidebar">
+                                        <div id="iconContainer" class="d-flex justify-content-center">
+
+                                        </div>
+                                        <div id="searchInPhone">
+
+                                        </div>
+                                        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                                        <div
+                                            class="row d-flex w-100 justify-content-around p-4 align-items-center align-content-center">
+                                            <a class="m-1 d-flex flex-column p-0 custom-popUpOpen"
+                                                style="width: fit-content; text-align: center; align-items: center;"><img
+                                                    src="./../assets/img/اكتشف السعوديه.svg" width="80" height="80"
+                                                    alt="">
+                                                <h7 class="text-light">Discover Saudi Arabia</h7>
+                                            </a>
+
+
+                                            <a class="m-1 d-flex flex-column p-0 custom-popUpOpen"
+                                                style="width: fit-content; text-align: center; align-items: center;"><img
+                                                    src="./../assets/img/المواسم والفعاليات.svg" width="80" height="80"
+                                                    alt="">
+                                                <h7 class="text-light">Seasons and events</h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column p-0 custom-popUpOpen"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="./../assets/img/تجارب السعوديه.svg" width="80" height="80"
+                                                    alt="">
+                                                <h7 class="text-light">Tourism experiences </h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column p-0 custom-popUpOpen"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="./../assets/img/حج وعمره.svg" width="80" height="80" alt="">
+                                                <h7 class="text-light"> Hajj and Umrah </h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column custom-popUpOpen"
+                                                style="width: fit-content; text-align: center; align-items: center;">
+                                                <img src="./../assets/img/عن الشركه (1).svg" width="80" height="80"
+                                                    alt="">
+                                                <h7 class="text-light">who Are We</h7>
+                                            </a>
+                                            <a class="m-1 d-flex flex-column col-6 px-0 custom-popUpOpen"
+                                                style=" text-align: center; align-items: center;">
+                                                <img src="./../assets/img/المركز الاعلامي.svg" width="80" height="80"
+                                                    alt="">
+                                                <h7 class="text-light"> Chairman Speech</h7>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+
+
+                                </li>
+
+
+                                <!-- **=================================SideBar start */ -->
+
+
+                                <div class="dropdown " id="transs">
+                                    <a class="btn  dropdown-toggle profileDropDown py-1 px-lg-2 ms-lg-2 d-flex" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                            class="bi bi-globe2 mt-1"></i>
+                                        <div class=" justify-content-center">English</div>
+                                    </a>
+
+                                    <ul class="dropdown-menu ">
+
+                                        <li id="transs" class="dropdown-item  justify-content-start ">
+                                            <a href="./../package.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+
+                                                <p class="mb-0 text-black-50">العربية</p>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="btn  dropdown-toggle profileDropDown py-1 px-1" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="profileBtn justify-content-center"><i
+                                                class="bi bi-person-circle mt-1 text-white"></i></div>
+                                    </a>
+
+                                    <ul class="dropdown-menu " style="z-index: 999999999899;">
+                                        <!-- <li class="dropdown-item   justify-content-start" id="">
+                                            <a href="check-out.html" data-bs-toggle="dropdown"
+                                                class="cart_bt search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3">
+                                            </a>
+                                        </li> -->
+                                        <li id="cartt" class="dropdown-item  justify-content-start custom-popUpOpen">
+                                            <a target="_blank"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-cart4"></i>
+                                                <p class="mb-0 basket">Cart</p>
+                                            </a>
+                                        </li>
+                                        <!-- <li id="wishListt" class="dropdown-item  justify-content-start ">
+                                                 <a href="./wishList.html"
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center">
+                                                <i class="bi bi-heart text-black-50 px-0 mx-0 py-0"></i>
+                                                <p class="mb-0 fav">قائمة المفضلات</p>
+                                            </a>
+                                        </li> -->
+                                        <li id="profile"
+                                            class="dropdown-item  justify-content-start  align-items-center ">
+                                            <a
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 custom-popUpOpen align-items-center">
+                                                <i class="bi bi-person-circle mt-1 text-black-50"></i>
+                                                <p class="mb-0 mt-1 personal"> Profile</p>
+                                            </a>
+                                        </li>
+                                        <li id="logOut"
+                                            class="dropdown-item  justify-content-start  align-items-center">
+                                            <a
+                                                class="search-overlay-menu-btn text-black-50 d-flex justify-content-start gap-lg-3 py-lg-2 align-items-center custom-popUpOpen">
+                                                <i class="bi bi-box-arrow-right mt-1 text-black-50"></i>
+                                                <p class="mb-0 mt-1 personal"> Log Out </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <li id="sideBarButton" class="px-lg-0">
+                                    <button class="btn sidebtn" onclick="openNav()"
+                                        style="                                    color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </Nav>
+    </div>
+    <!-- Navbar End -->
+    <!--!--------------- Navbar End -->
+
+    <!--//---------------Fake Carousel Start -->
+    <div id="header-carousel" class="carousel slide carousel-fade d-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <section class="header-video w-100" style=" height: 668.29px; position: relative;">
+                <div id="hero_video">
+                    <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)"
+                        style="background-color: rgba(0, 0, 0, 0.6);">
+                        <div class="intro_title position-absolute w-100" style="top: 40%;">
+                            <h3 class="animated fadeInDown">ناشيونال ايجيبت للسياحة</h3>
+                            <p class="animated fadeInDown">هل تبحث عن تجارب جديدة في السعودية ؟</p>
+                            <!-- <a href="#" class="animated fadeInUp button_intro">View Tours</a>
+                                <a href="#" class="animated fadeInUp button_intro outline d-none d-sm-inline-block">View
+                                    Tickets</a> -->
+                            <!-- <a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y"
+                                    class="video animated fadeInUp button_intro outline">Play video</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /search_bar-->
+
+                <img src="./../assets/img/video_fi.png" alt="Image" class="header-video--media" data-video-src=""
+                    data-teaser-source="video/hero1" data-provider="" data-video-width="854" data-video-height="480">
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
+                    <source src="./../assets/img/hero1.mp4" type="video/mp4">
+                    <source src="./../assets/img/hero1.mp4" type="video/ogg">
+                </video>
+                <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video">
+                    <source src="video/hero1.mp4" type="video/mp4">
+                    <source src="video/hero1.ogv" type="video/ogg">
+                </video>
+                <!-- /*===============================Video End*/ -->
+                <!--* ========================================================================================================== -->
+                <!-- /*===============================Sticky navigator End*/ -->
+                <div class="container-xxl w-100 position-absolute bottom-0">
+                    <ul class="nav nav-pills mb-0 position-absolute w-100 row align-items-center mx-0 justify-content-between g-0"
+                        id="pills-tab" role="tablist" dir="rtl" style=" bottom: 0;padding-right: 0px;">
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link active p-3" id="pills-home-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-home" aria-selected="true">
+                                التجارب السياحية
+                                <img src="./../assets/img/تجارب السعوديه.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+                            </button>
+                        </li>
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link p-3" id="pills-profile-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-profile" aria-selected="false" tabindex="-1">
+                                المواسم والفعاليات
+                                <img src="./../assets/img/المواسم والفعاليات.svg" class="mainCategory" style=""
+                                    width="45" height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-3" id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+                                اكتشف السعودية
+                                <img src="./../assets/img/اكتشف السعوديه.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+
+                        <!-- <li class="nav-item col-2 d-flex align-items-center flex-column" role="presentation">
+                                <button class="nav-link  p-3" id="pills-contact-tab" data-bs-toggle="pill" type="button"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">
+                                    اكتشف قطر
+                                    <img src="./../assets/img/اكتشف السعوديه.svg" class="mainCategory" style="" width="45"
+                                        height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                                </button>
+                            </li> -->
+                        <li class="nav-item col-3 d-flex align-items-center flex-column" role="presentation">
+                            <button class="nav-link  p-3" id="pills-islam-tab" data-bs-toggle="pill" type="button"
+                                role="tab" aria-controls="pills-islam" aria-selected="false" tabindex="-1">
+                                الحج والعمرة
+                                <img src="./../assets/img/حج وعمره.svg" class="mainCategory" style="" width="45"
+                                    height="45" fill="mainCategory" viewbox="0 0 16 16" alt="">
+
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /*===============================Sticky navigator End*/ -->
+            </section>
+        </div>
+
+    </div>
+    <!--//---------------Fake Carousel End -->
+    <!--&--------------- GUIDE START -->
+    <div>
+        <div
+            class="navbar-expand-lg navbar-dark py-5 py-lg-0 d-flex align-items-center justify-content-around border-0 mt-5 guide">
+            <ul
+                class="stickyUl my-0 row py-2 list-unstyled w-100 container-fluid justify-content-around gap-0 align-content-center w-75 stickyUl">
+                <li class="col-lg-2 col-4 text-center pt-lg-2"><a class="text-dark" href="#afteroverView">Overview</a>
+                </li>
+                <li class="col-lg-2 col-4 text-center pt-lg-2"><a class="text-dark" href="#afterStepper">Details</a>
+                </li>
+                <li class="col-lg-2 col-4 text-center pt-lg-2"><a class="text-dark" href="#afterComponent1">Contents</a>
+                </li>
+                <!-- <li class="col-lg-2 col-4 text-center pt-lg-2"><a class="text-dark" href="#afterComponent2">Excluded</a>
+            </li> -->
+                <li class="col-lg-2 col-4 text-center pt-lg-2"><a class="text-dark" href="#afterMap">Price</a></li>
+                <li class="col-lg-2 col-4 text-center pt-lg-2"><a class="text-dark" href="#afterPolicies">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--&--------------- GUIDE END -->
+
+
+    <!----------------- cramp START -->
+    <div class="pt-lg-5 mt-5">
+        <div class="main_title text-start px-4 d-flex container-xxl mx-auto h-25 mt-lg-5">
+            <h6>Home <span>/ Express Hajj 10 days (Kadanah)
+
+                </span></h6>
+        </div>
+
+    </div>
+    <!----------------- cramp START -->
+    <div class="custom-popup" id="custom-popup" style="display: block;">
+        <span class="custom-close-btn" onclick="closeCustomPopup()"><i class="bi bi-x-lg"></i></span>
+        <!-- Popup content here -->
+        <p class="hottLine">
+
+            <a href="tel:17115" class="hottLineNum"><img src="./../assets/img/National Egypt.png" class="mt-5"
+                    style="width: 100%;" alt=""></a>
+        </p>
+        <p class="comingSoon text-center">SOON</p>
+    </div>
+    <!--~========================== main Staaart -->
+    <div class="row justify-content-between container-xxl mx-auto position-relative" style="height: fit-content ;">
+        <div class="main col-lg-7">
+            <!--^--------------- slider start -->
+            <div class="container-xxl p-0">
+                <h2> Express Hajj 10 days (Kadanah)
+
+                </h2>
+                <div class="d-flex">
+                    <div class="d-flex ms-3">
+                        <i class="bi bi-geo-alt"></i>
+                        <p> Mecca and Medina</p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                            <!-- slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./../assets/img/hotel1.jpg" alt="Hills">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./../assets/img/hotel2.jpg" alt="Hills">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./../assets/img/camps1.jpg" alt="Hills">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./../assets/img/hotel3.jpg" alt="Hills">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./../assets/img/hotel4.jpg" alt="Hills">
+                                </div>
+                            </div>
+
+                            <!-- Left right -->
+                            <a class="carousel-control-prev" href="#custCarousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#custCarousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+
+                            <!-- Thumbnails -->
+                            <ol class="carousel-indicators list-inline gap-2">
+                                <li class="list-inline-item active">
+                                    <a id="carousel-selector-0" class="selected" data-slide-to="0"
+                                        data-target="#custCarousel">
+                                        <img src="./../assets/img/hotel1.jpg" class="img-fluid">
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel">
+                                        <img src="./../assets/img/hotel2.jpg" class="img-fluid">
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel">
+                                        <img src="./../assets/img/camps1.jpg" class="img-fluid">
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel">
+                                        <img src="./../assets/img/hotel3.jpg" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a id="carousel-selector-4" data-slide-to="4" data-target="#custCarousel">
+                                        <img src="./../assets/img/hotel4.jpg" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!--^--------------- slider end -->
+        </div>
+
+
+        <!--**-------------check-out start -->
+
+        <form class="col-lg-4 check-out p-3 mb-0 text-center" id="fixedComponent">
+            <a href="tel:17115">
+                <h1 class="text-dark">For reservations and inquiries </h1>
+                <img src="./../assets/img/National Egypt.png" class="p-5" style="width: 100%;" alt="">
+
+            </a>
+        </form>
+        <!--**-----------check-out end -->
+
+        <div id="afteroverView" style="height: 40px;"></div>
+
+
+        <!--?-------------  overview start -->
+        <div class="my-5 container-fluid col-lg-7 mx-1" style="">
+            <div class="" id="overView">
+                <h2> Overview</h2>
+                <p>
+                    - Express Hajj (10 days - 9 nights) Kadanah program (including flight tickets)_from Tuesday, June
+                    11,
+                    2024 / 5 Dhu al-Hijjah 1445 to Thursday, June 20, 2024 / 14 Dhu al-Hijjah 1445
+                    <!-- <br> -->
+                    <br>
+                    - We provide our valued customers with The Hajj of Sunnah as our Prophet Muhammed (peace and
+                    blessing
+                    be upon him) exactly had performed, believing in our slogan and keen on achieving it WHEN LUXURY
+                    MEETS GOOD WORSHIP <br>
+                    - The Hajj and Umrah experience with National Egypt Tours is not like its counterparts, but rather
+                    it
+                    is a unique experience in which you taste the sweetness of faith and obedience with goodness to
+                    reach the stage of tranquility and good faith in God. <br>
+                    - We are at your service during the most important days of your life, and we are confident that our
+                    customers will be satisfied with our services because we know what you deserve.
+                </p>
+            </div>
+
+        </div>
+        <!--?-------------  overview end -->
+        <div id="afterStepper" style="height: 40px;"></div>
+
+        <!--!-------------  stepper start -->
+        <div class="row container-fluid mx-auto mt-0">
+            <h2> Package Details</h2>
+            <div class="col-1" style="width: 50px;">
+                <div class=" offset-md-2 block ">
+                    <div class="wrapper-progressBar">
+                        <ul class="progressBar d-flex flex-column px-0 justify-content-between" style="">
+                            <li class="active">
+                            </li>
+                            <li class="active m1"></li>
+                            <li class="active m2"></li>
+                            <li style="visibility: hidden;"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-10 dayDetails">
+                <h6>Sunnah Hajj with National Egypt Tours:</h6>
+                <div class="row mb-4">
+                    National Egypt Tours is committed to perform the authentic Sunnah Hajj as it should be, performing
+                    the rituals, from Tarwiyah - for those who wish to spend the night in Muzdalifah - to spending the
+                    night in Mina for the three days of Tashreeq until stoning after noon.
+                </div>
+                <h6>The Best Nearest Hotels directly on the Haram:</h6>
+                <div class="row mb-4">
+                    National Egypt Tours contracts with the best 5-star hotels on the Haram Court in Mecca and Madina
+                    with The highest level of services and luxury just to make LUXURY MEETS GOOD WORSHIP
+                    <br>
+
+                    <p class="mb-0 mt-2"> <span style="font-weight: bold; color: black;"> Madinah Hotel: </span>The
+                        Oberoi Madina (from Tuesday 5 Dhu al-Hijjah to Friday 8 Dhu al-Hijjah (3 nights)
+                        (breakfast - lunch - dinner)
+                    </p>
+                    <p>
+                        <span style="font-weight: bold; color: black;"> Makkah Hotel: </span>Raffles (from Friday, June
+                        8) Al-Hijjah until Thursday 14 Dhul-Hijjah (6 nights) (breakfast - lunch - dinner)
+                    </p>
+                </div>
+                <h6>Luxury Tents in Mina and Arafa:</h6>
+                <div class="row mb-2">
+                    National Egypt Tours is keen on comforting its customers in Arafa and Mina by providing them with
+                    the best luxurious tents, either in Majar Alkabsh or with Al-Mutawaf / Alaa Mohdar tents that are
+                    distinguished by 5-star programs.
+
+                    <br>
+                    National Egypt Tours tents in Arafat are five-star luxury tents specially designated for our clients with
+                    4 meters high. Air-conditioned, furnished with carpets, and equipped with comfortable special
+                    chairs, divided into two parts, one for sleeping and the other for seating for both. Ladies and
+                    men's tents<br>
+                    There are also seating areas outside the tents equipped with chairs and umbrellas, and there are
+                    private bathrooms for men and others for ladies.<br>
+                    Food and beverage services are provided at the highest level including an open buffet for meals with
+                    cold and hot drinks (breakfast - lunch - dinner)<br>
+
+                    Our tents in Mina are independent tents with a private entrance, divided into two parts, one for men
+                    and the other for women. Moreover, there’re Large and comfortable seatings equipped with an internal
+                    radio for listening to religious seminars.<br>
+                    There is also an open buffet provided by five-star hotels, in addition to hot and cold drinks around
+                    the clock (Breakfast - Lunch - Dinner)<br>
+                    <span style="font-weight: bold; color: black;">With a group of the best preachers of Al-Azhar
+                        Al-Sharif:</span>
+
+                    In the company of the best preachers (Dr. Sherif Shehata - Dr. Ahmed Al-Sayed - Sheikh Ahmed
+                    Al-Sabbagh, Sheikh Muhammad Adel - Reciter/ Muhammad Atef - Sheikh/ Osama Muhammad)<br>
+
+                    We make religious lectures before traveling to introduce the rituals in addition to daily lectures
+                    from afternoon prayer to sunset prayer throughout the days of the Hajj trip.
+                    there are also Lectures, sermons, supplications on the Day of Arafah, and lectures on the three days
+                    of Tashreeq
+
+
+                </div>
+
+            </div>
+        </div>
+        <!--!------------- stepper end -->
+
+        <!-- banner start-->
+        <div class="banner colored container-xl p-0 mt-3 w-100" style="background: #e04f6700 url(./../assets/img/banner2.png) no-repeat center bottom !important;overflow:visible;height: 189px;
+        box-shadow: none;">
+            <!-- <h4>Discover our Top tours <span>from $34</span></h4> -->
+            <p>
+                <!-- Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. -->
+            </p>
+            <!-- <a href="single_tour.html" class="btn_1 white">Read more</a> -->
+        </div>
+        <!-- banner end-->
+
+        <div id="afterComponent1" style="height: 40px;"></div>
+
+        <div class="container-xxl mx-auto mt-3 d-flex flex-column">
+            <!--&------------- components start -->
+            <!--*============== included start -->
+            <h4 class="text-white mb-3" style="color: #ca9f44 !important;">Package Contents</h4>
+            <div class="row col-lg-9">
+                <div class="col-lg-6 d-flex flex-column">
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        Airline ticket</a>
+
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        Transfer from Medina to Mecca by the luxury Haramain train</a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        Internal transportation in special GMC cars to provide complete comfort</a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        Modern, air-conditioned buses for ritual days
+                        <a class="text-dark my-2" style="font-size: 17px;" href=""> <i
+                                class="bi bi-arrow-left ms-1"></i>
+                            An integrated religious and spiritual program with the best preachers of Al-Azhar
+                            Al-Sharif</a>
+
+
+
+
+                </div>
+                <div class="col-lg-6 d-flex flex-column">
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        The VIP lounge at Cairo Airport</a>
+
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""><i class="bi bi-arrow-left ms-1"></i>
+                        Hotel accommodation 10 days - 9 nights</a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        Madinah: Oberoi Madina 3 nights</a>
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        Mecca: Raffles Palace Hotel 6 nights</a>
+
+                    <a class="text-dark my-2" style="font-size: 17px;" href=""> <i class="bi bi-arrow-left ms-1"></i>
+                        Breakfast - Lunch - Dinner</a>
+
+                </div>
+            </div>
+            <!--*==============included end -->
+
+            <div id="afterComponent2" style="height: 40px;"></div>
+
+            <!--//*============== Excluded start -->
+            <!-- <hr class="container-xxl my-4">
+            <h4 class="text-white mb-3" style="color: #ca9f44 !important;"> المستثنى من الباقة </h4>
+            <div class="row col-lg-9">
+                <div class="col-lg-6 d-flex flex-column">
+                    <a class="text-dark my-2" style="font-size: 20px;" href=""><i class="bi bi-x text-danger ms-1"></i>
+                        تذكرة طيران
+                    </a>
+                    <a class="text-dark my-2" style="font-size: 20px;" href=""> <i
+                            class="bi bi-x text-danger ms-1"></i>غداء</a>
+                    <a class="text-dark my-2" style="font-size: 20px;" href=""> <i
+                            class="bi bi-x text-danger ms-1"></i>بنزين</a>
+                </div>
+                <div class="col-lg-6 d-flex flex-column">
+
+                    <a class="text-dark my-2" style="font-size: 20px;" href=""> <i class="bi bi-x text-danger ms-1"></i>
+                        مواقع زيارة رسوم الدخول
+                    </a>
+                    <a class="text-dark my-2" style="font-size: 20px;" href=""> <i class="bi bi-x text-danger ms-1"></i>
+                        أنشطة إضافية
+                    </a>
+                    <a class="text-dark my-2" style="font-size: 20px;" href=""> <i class="bi bi-x text-danger ms-1"></i>
+                        خوذة ومعدات السلامة
+                    </a>
+                </div>
+            </div> -->
+            <!--*============== Excluded end -->
+
+            <!--&------------- components end -->
+            <!-- <div id="afterMap" style="height: 40px;">/
+            </div> -->
+
+            <!-- <hr class="container-xxl my-5"> -->
+            <!--?------------map start -->
+            <!-- <h4 class="text-white mb-3 mt-3 x" style="color: #ca9f44 !important;"> الموقع </h4>
+            <div class=" mb-2 col-lg-7" style="padding: 3px;">
+                <iframe class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237684.58518226293!2d40.01136192248606!3d21.436254372098105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1694043192707!5m2!1sar!2seg"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+            <div id="afterMap" style="height: 40px;">
+            </div>
+            <!--?---------map end -->
+            <hr class="container-xxl my-4">
+            <!--?------------- overview start -->
+            <div class="my-1 container-fluid col-lg-7 mx-1" style="">
+                <div class="" id="overView">
+                    <h2>Price</h2>
+                    <p>
+                        Double: equivalent to 245 thousand riyals <br>
+                        Triple: equivalent to 235 thousand riyals
+                    </p>
+                </div>
+
+            </div>
+            <!--?------------- overview end -->
+            <!--^------------policies start -->
+            <div class="mb-5 mt-4 col-lg-7" style="">
+                <hr class="container-xxl my-4">
+                <div id="afterPolicies" style="height: 20px;"></div>
+                <div class="mt-5">
+                    <h2>Contact customer service</h2>
+                    <h4 class="text-primary">
+                        Egypt Branches
+                    </h4>
+                    <div class="d-lg-flex">
+
+                        <div class="px-2">
+
+                            <h5 class="mt-3">
+                                <span> Cairo <br></span>Customer Service
+                            </h5>
+                            <p> 01103004133 - 01103004177 <br>
+                                01110089933 - 01116627711 <br>
+                                01110089911 - 01110089922</p>
+                        </div>
+                        <div class="mx-lg-2 px-2">
+                            <h5 class="mt-3">
+
+                                <span> Alexandria <br></span>VIP customer service
+                            </h5>
+                            <p>
+                                01091732090 - 01007870252 <br>
+                                01091738575 - 01091738585
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex">
+                        <div class="mx-lg-2 px-2">
+                            <h5 class="mt-3">
+
+                                <span> Suez <br></span>Customer service
+                            </h5>
+                            <p>
+                                01223873447 - 01015157051
+                            </p>
+                        </div>
+                        <div class="mx-lg-2 px-2">
+                            <h5 class="mt-3">
+
+                                <span> Kafr El-Sheikh
+                                    <br></span>Customer service
+                            </h5>
+                            <p>
+                                01004408097
+                            </p>
+                        </div>
+                    </div>
+                    <h4 class="text-primary mt-3">
+                        United Arab Emirates Branch</h4>
+                    <div class="d-lg-flex">
+
+                        <div class="">
+
+                            <h5 class="">
+                                <span> Dubai <br></span>VIP customer service
+                            </h5>
+                            <p> 045916686 - 045916662
+                                - 00971-545877775 - 00971-545977775</p>
+                        </div>
+
+                    </div>
+                    <h4 class="text-primary mt-3">
+                        Libya State Branch
+                    </h4>
+                    <div class="d-lg-flex">
+
+                        <div class="">
+
+                            <h5 class="">
+                                <span> Tripoli <br></span>VIP customer service
+                            </h5>
+                            <p>
+                                00218-921017115 - 00218-921117115 - 00218-916171155 - 00218-918171155</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--^---------policies start -->
+        </div>
+    </div>
+    <!--~========================== main End -->
+
+    <!--//-------------- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp py-2" id="footer" data-wow-delay="0.1s">
+        <div class="container-xxl">
+            <div class="row gx-5 justify-content-around align-items-center">
+                <div class="col-lg-3 col-md-6 footer-about">
+                    <div id="bg-footer"
+                        class="d-flex flex-column align-items-center justify-content-center text-center p-4 bg-logo-des-footer"
+                        style="">
+                        <style>
+                            @media(max-width:767px) {
+                                #bg-footer {
+                                    height: 95% !important;
+                                }
+                            }
+                        </style>
+                        <img src="./../assets/img/favIcon.png" alt=""
+                            style="width: 110px !important; height: 110px !important;" class="logo1 mt-4">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-1 mt-0"
+                            style="margin-right: 80px;">
+                            <h3 class="text-light mb-0"> </h3>
+                        </div>
+
+                        <p class="mb-0 mt-1"> Contact</p>
+                        <div class="d-flex mb-2 flex-row-reverse" style="direction: ltr !important; font-size: 27px;">
+                            <a href="tel:17115">
+                                <p class="mb-0 text-light">17115</p>
+                            </a>
+                            <!-- <i class="bi bi-telephone text-light me-2"></i> -->
+
+                        </div>
+
+                        <div class="d-flex pt-0 mb-2">
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                    </path>
+                                </svg></a>
+                            <a class="btn btn-outline-light btn-social border-0" href=""><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open ms-2" style=""></i>
+                            <p class="mb-0" style="">info@nationalegypt.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 d-flex flex-column">
+                    <h4 class="text-white mb-3" style="color: #ca9f44 !important;">Most viewed links
+                    </h4>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"><i class="bi bi-arrow-left ms-1"></i>
+                        Discover Saudi Arabia
+                    </a>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"> <i class="bi bi-arrow-left ms-1"></i>Events
+                        and seasons
+                    </a>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"> <i class="bi bi-arrow-left ms-1"></i>
+
+                        Activities you can do
+                    </a>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"> <i class="bi bi-arrow-left ms-1"></i>
+
+                        Register as a service provider
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 d-flex flex-column">
+
+                    <h4 class="text-white mb-3" style="color: #ca9f44 !important;"> Useful information
+
+                    </h4>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"><i class="bi bi-arrow-left ms-1"></i>
+                        FAQs
+                    </a>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"> <i class="bi bi-arrow-left ms-1"></i>
+                        call us
+                    </a>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"> <i class="bi bi-arrow-left ms-1"></i>
+
+                        who are we
+                    </a>
+                    <a class="btn btn-link footerLinks custom-popUpOpen"> <i class="bi bi-arrow-left ms-1"></i>
+
+                        Register as a service provider
+                    </a>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5">
+                    <h4 class="text-white mb-3">Subscribe to our newsletter</h4>
+                    <p></p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input name="email" class="form-control border-primary w-100 py-3 text-right " type="email"
+                            style="height: 40px; border-radius: 5px; border-color: #ca9f44 !important; font-size: 13px; padding-left: 96px;"
+                            placeholder="email">
+                        <button type="button" class="btn position-absolute top-0 start-0 text-light"
+                            style="height: 40px; background-color: #ca9f44; border-color: #ca9f44;"> Subscribe <i
+                                class="bi bi-send-plus me-1"></i></button>
+                    </div>
+                </div>
+                <hr>
+                <div
+                    class="col-md-6 text-center d-lg-flex align-items-center justify-content-end gap-lg-5  mb-md-0 w-100 mb-0">
+                    <div class="ms-lg-5">
+                        <a class="text-light mb-0" href="#">Copyright © 2024 National Egypt Tours</a>, All Right
+                        Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Powered By <a class="mb-0" href="https://www.mv-is.com/en" target="_blank"
+                            style="color:#ca9f44 !important">Master Vision Integrated Solutions</a>
+                    </div>
+                    <div class="d-lg-flex gap-1 me-lg-5">
+                        <img src="/assets/img/VISA.png" width="70" alt="">
+                        <img src="/assets/img/masterCard.png" width="70" alt="">
+                        <img src="/assets/img/PayPal.png" width="70" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--//-------------- Footer End -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.stickyUl');
+            const navbarOffset = navbar.offsetTop;
+
+            if (window.pageYOffset > navbarOffset) {
+                navbar.classList.add('sticky');
+                navbar.classList.add('py-2');
+                navbar.classList.remove('mt-2');
+
+
+            } else {
+                navbar.classList.remove('sticky');
+                navbar.classList.add('mt-2');
+
+            }
+        });
+    </script>
+    <script>
+        if (window.innerWidth > 767) {
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var dropdownMenu = document.querySelector('.dropdown-menu');
+                var profileDropDown = document.querySelector('.profileDropDown');
+
+                // Open/close dropdown menu when clicking on profileDropDown
+                profileDropDown.addEventListener('click', function (event) {
+                    event.stopPropagation(); // Prevents the document click listener from firing
+                    dropdownMenu.classList.toggle('show');
+                });
+
+                // Close dropdown menu when clicking outside of it
+                document.addEventListener('click', function (event) {
+                    var isClickInsideDropdown = dropdownMenu.contains(event.target);
+                    var isClickOnProfileDropDown = profileDropDown.contains(event.target);
+
+                    if (!isClickInsideDropdown && !isClickOnProfileDropDown) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                });
+            });
+        }
+    </script>
+    <script>
+        const customPopup = document.getElementById('custom-popup');
+        customPopup.style.display = "none";
+        function closeCustomPopup() {
+            document.getElementById('custom-popup').style.display = 'none';
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const popUpOpenLinks = document.querySelectorAll('.custom-popUpOpen');
+            const customPopup = document.getElementById('custom-popup');
+
+            popUpOpenLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    customPopup.style.display = "block";
+                });
+            });
+
+            // Close popup when clicking anywhere outside of it
+            window.addEventListener('click', function (event) {
+                if (event.target == customPopup) {
+                    customPopup.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./../assets/js/bootstrap.min.js"></script> -->
+    <script src="./../assets/lib/wow/wow.min.js"></script>
+    <script src="./../assets/lib/easing/easing.min.js"></script>
+    <script src="./../assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="./../assets/lib/counterup/counterup.min.js"></script>
+    <script src="./../assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+        myLink.addEventListener('click', function (e) {
+            e.preventDefault();
+        });</script>
+    <script src="./../assets/js/main.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
